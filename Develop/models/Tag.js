@@ -8,6 +8,7 @@ Tag.init(
   {
     // define columns
     tag_name: STRING,
+    allowNull: false,
 
   },
   {

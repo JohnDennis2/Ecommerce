@@ -9,6 +9,7 @@ Category.init(
     // define columns
     category_name: STRING,
     allowNull: false,
+    
   },
   {
     sequelize,
