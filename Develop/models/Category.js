@@ -6,9 +6,18 @@ class Category extends Model {}
 
 Category.init(
   {
+    id:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
     // define columns
-    category_name: STRING,
-    allowNull: false,
+    category_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
+  
     
   },
   {
@@ -16,6 +25,7 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
+    // reference model
     modelName: 'category',
   }
 );

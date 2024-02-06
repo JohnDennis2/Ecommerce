@@ -1,2 +1,1 @@
-# Ecommerce
-E-commerce site for back end applications
+This is an Ecommerce 
