@@ -1,1 +1,2 @@
-# E-commerce Back End Starter Code
+# Ecommerce
+E-commerce site for back end applications
