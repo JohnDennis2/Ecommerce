@@ -27,10 +27,8 @@ Product.init(
       type:DataTypes.INTEGER,
       allowNull:false,
     },
-    category_id: { 
-      type:DataTypes.INTEGER,
-      allowNull:false,
-  }
+  },
+    
   {
     sequelize,
     timestamps: false,
@@ -38,7 +36,7 @@ Product.init(
     underscored: true,
     modelName: 'product',
   },
-}
+
 
 );
 
