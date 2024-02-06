@@ -9,6 +9,9 @@ ProductTag.init(
     // define columns
     product_id: INTEGER,
     tag_id: INTEGER,
+    autoIncrement: true,
+    allowNull: false,
+    
   },
   {
     sequelize,

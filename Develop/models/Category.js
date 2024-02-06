@@ -7,7 +7,9 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
-    category_name: STRING  },
+    category_name: STRING,
+    allowNull: false,
+  },
   {
     sequelize,
     timestamps: false,
