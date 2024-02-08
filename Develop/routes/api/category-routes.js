@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoriesData = await Category.findAll({
-      include: Product,
+      include: [Product]
     });
     res.status(200).json(categoriesData);
   } catch (err) {
@@ -54,7 +54,7 @@ router.put('/:id', async (req, res) => {
       },
     });
 
-    if (!updatedCategory[0]) {
+    if (!updatedCategory) {
       res.status(404).json({ message: 'No category found with that id!' });
       return;
     }
